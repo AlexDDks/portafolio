@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 1368px;
+    margin: 0;
+    border: 2px red dotted;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    width: 25vw;
+}
+
+.list1 {
+    display: flex;
+}
+
+li {
+    margin: 1.5vw;
+}
+
+.list1,
+.list2 {
+    align-items: center;
+}
