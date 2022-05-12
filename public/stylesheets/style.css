@@ -30,9 +30,6 @@ header {
 
 }
 
-.contLogo {
-    border: 2px red solid;
-}
 
 .logo {
     display: block;
@@ -65,7 +62,7 @@ a {
 }
 
 
-.list1 {
+.list1Header {
     display: flex;
     /* Debido a que todos los items dentro del contenedor list1 son listas
     están en dirección del cross axis, estos al aplicarle flex al contenedor
@@ -86,7 +83,7 @@ li {
 
 }
 
-.list2 {
+.list2Header {
     align-items: center;
 }
 
@@ -94,4 +91,35 @@ li {
     display: block;
     width: 50%;
     margin: auto;
+    padding: 0 0 3% 0;
+}
+
+body main .section1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgbase {
+    width: 100%;
+}
+
+.footerNavBar {
+    display: flex;
+}
+
+.sectionFooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section ul {
+    display: flex;
+}
+
+footer section ul a {
+    font-size: 16px;
+}
+
+p {
+    padding: 1.5%;
 }
