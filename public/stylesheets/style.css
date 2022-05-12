@@ -10,10 +10,12 @@
 body {
     /* Le damos al body el ancho total del vw hasta un máximo valor absoluto */
     width: 100vw;
-    max-width: 1300px;
+    max-width: 1500px;
     background-color: white;
     border: black 5px solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 header {
     width: 100%;
@@ -25,13 +27,19 @@ header {
     align-items: center;
     /* En el cross axis en la magnitud total, los ítems van a colocarse al medio*/
     background-color: rgb(255, 255, 255);
-    font-size: 12px;
 
 }
 
+.contLogo {
+    border: 2px red solid;
+}
+
 .logo {
-    width: 25vw;
+    display: block;
+    width: 85%;
+    /* El logo toma el valor en porcentaje de su contenedor DIV, el caul comparte magnitud con 3 elementos más */
     padding: 1vw;
+    margin: auto;
 }
 
 
@@ -39,16 +47,23 @@ hr {
     width: 95%;
     margin: auto;
     color: rgb(93, 93, 93);
-    height: 4px;
+    height: 2px;
     background-color: rgb(93, 93, 93);
-    border-radius: 3px;
+}
+
+body header nav ul {
+    display: flex;
 }
 
 a {
+    text-decoration: none;
+    /* Se le quita al ENLACE el subrayado */
     color: rgb(26, 207, 223);
     font-weight: 700;
-    /* Le quitamos el color a los enlaces*/
+    /* Le quitamos el color a los enlaces */
+    font-size: 18px;
 }
+
 
 .list1 {
     display: flex;
@@ -67,10 +82,11 @@ li {
     text-align: center;
     /* Se centra al texto en contenedor*/
     list-style: none;
+
+
 }
 
 .list2 {
-    display: flex;
     align-items: center;
 }
 
