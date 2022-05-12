@@ -10,15 +10,14 @@
 body {
     /* Le damos al body el ancho total del vw hasta un máximo valor absoluto */
     width: 100vw;
-    max-width: 1500px;
+    max-width: 1600px;
     background-color: white;
-    border: black 5px solid;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI';
 }
 
 
 header {
-    width: 100%;
+    width: 100vw;
     display: flex;
     /* Tenemos 3 items en el header por lo que aplicamos la propiedad flex
     para que estos se coloquen uno al lado del otro */
@@ -40,11 +39,11 @@ header {
 }
 
 
-hr {
+.hrHeader {
     width: 95%;
     margin: auto;
     color: rgb(93, 93, 93);
-    height: 2px;
+    height: 3px;
     background-color: rgb(93, 93, 93);
 }
 
@@ -56,9 +55,9 @@ a {
     text-decoration: none;
     /* Se le quita al ENLACE el subrayado */
     color: rgb(26, 207, 223);
-    font-weight: 700;
+    font-weight: 550;
     /* Le quitamos el color a los enlaces */
-    font-size: 18px;
+    font-size: 15px;
 }
 
 
@@ -74,13 +73,20 @@ a {
 li {
 
     margin: .5vw;
-    padding: .5vw;
     border-radius: 5px;
+    /* Se le pone un border-radius para que no sea un rectángulo filoso */
     text-align: center;
     /* Se centra al texto en contenedor*/
     list-style: none;
+    text-decoration: underline;
+    border: rgb(26, 207, 223) 2px solid;
 
+    /* background-color: rgba(93, 93, 93, .8); */
+}
 
+.list1Item,
+.list2Item {
+    padding: .25vw;
 }
 
 .list2Header {
@@ -103,6 +109,17 @@ body main .section1 {
     width: 100%;
 }
 
+.hrFooter {
+    width: 95%;
+    margin: auto;
+    color: rgb(93, 93, 93);
+    height: 3px;
+    background-color: rgb(93, 93, 93);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
 .footerNavBar {
     display: flex;
 }
@@ -110,6 +127,7 @@ body main .section1 {
 .sectionFooter {
     display: flex;
     justify-content: space-around;
+    margin: 0 0 2% 0;
 }
 
 footer section ul {
@@ -120,6 +138,21 @@ footer section ul a {
     font-size: 16px;
 }
 
-p {
-    padding: 1.5%;
+.footerSection2 {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2%;
+}
+
+.footerP2 {
+    padding-top: 2%;
+}
+
+footer li {
+    margin: .5vw;
+    padding: .25vw;
+    border: rgb(26, 207, 223) 2px solid;
+    /* background-color: rgba(93, 93, 93, .8); */
+    text-decoration: underline;
+    border-radius: 5px;
 }
