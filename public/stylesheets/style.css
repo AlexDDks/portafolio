@@ -10,22 +10,23 @@
 body {
     /* Le damos al body el ancho total del vw hasta un máximo valor absoluto */
     width: 100vw;
-    border: 5px red dotted;
-    max-width: 1000px;
+    max-width: 1300px;
     background-color: white;
+    border: black 5px solid;
 }
 
 header {
+    width: 100%;
     display: flex;
     /* Tenemos 3 items en el header por lo que aplicamos la propiedad flex
     para que estos se coloquen uno al lado del otro */
-    justify-content: space-between;
+    justify-content: space-around;
     /* El espacio entre los 3 ítems a lo largo del main axis estos va a ser homogéneo */
     align-items: center;
     /* En el cross axis en la magnitud total, los ítems van a colocarse al medio*/
     background-color: rgb(255, 255, 255);
     font-size: 12px;
-    border: 5px rgb(0, 34, 255) dotted;
+
 }
 
 .logo {
@@ -33,9 +34,14 @@ header {
     padding: 1vw;
 }
 
-li {
-    list-style: none;
-    /* Le quitamos a los li las viñetas */
+
+hr {
+    width: 95%;
+    margin: auto;
+    color: rgb(93, 93, 93);
+    height: 4px;
+    background-color: rgb(93, 93, 93);
+    border-radius: 3px;
 }
 
 a {
@@ -54,15 +60,22 @@ a {
 }
 
 li {
-    border: 2px red solid;
+
     margin: .5vw;
     padding: .5vw;
     border-radius: 5px;
     text-align: center;
     /* Se centra al texto en contenedor*/
+    list-style: none;
 }
 
 .list2 {
     display: flex;
     align-items: center;
+}
+
+.img1 {
+    display: block;
+    width: 50%;
+    margin: auto;
 }
