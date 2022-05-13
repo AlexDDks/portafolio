@@ -8,6 +8,7 @@ const app = express()
 
 
 const mainRouter = require('./routes/mainRouter')
+const usersRouter = require('./routes/usersRouter')
 const port = process.env.PORT || 3000
 
 
@@ -15,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
 
 app.use('/', mainRouter)
-
+app.use('/users', usersRouter)
 
 
 
