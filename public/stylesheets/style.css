@@ -21,8 +21,9 @@ header {
     display: flex;
     /* Tenemos 3 items en el header por lo que aplicamos la propiedad flex
     para que estos se coloquen uno al lado del otro */
-    justify-content: space-around;
-    /* El espacio entre los 3 ítems a lo largo del main axis estos va a ser homogéneo */
+    justify-content: space-evenly;
+    /* El espacio entre los 3 ítems a lo largo del main axis estos va a ser el mismo
+    sin importar los márgenes */
     align-items: center;
     /* En el cross axis en la magnitud total, los ítems van a colocarse al medio*/
     background-color: rgb(255, 255, 255);

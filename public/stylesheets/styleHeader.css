@@ -5,13 +5,17 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI';
 }
 
 .articleHeader {
     display: flex;
-    border: 2px red solid;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.logo {
+    padding-top: 4%;
 }
 
 h1 {
@@ -19,6 +23,59 @@ h1 {
     font-weight: 500;
     font-size: 24px;
     color: rgb(0, 175, 239);
-    /* margin-right: 10%; */
+    padding-top: .5%;
 
+}
+
+hr {
+    width: 95%;
+    margin-top: 20px;
+    color: rgb(93, 93, 93);
+    height: 1px;
+    background-color: rgb(93, 93, 93);
+}
+
+.articleNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerNavBar {
+    align-items: flex-start;
+}
+
+li {
+    list-style: none;
+    padding: none;
+    /* Acá vemos la importancia de utilizar alguna magnitud relativa no
+        dependiente del padre, porque el padre de los 2 gurpos de li son diferentes
+        entonces si usamos porcentajes para poner un padding, ambos paddings serán diferentes */
+
+}
+
+.list1Header,
+.list2Header {
+    font-size: 1rem;
+    display: flex;
+    padding-left: 0px;
+    /* No sé porqué me aparece acá un padding a la izquierda que no quiero */
+}
+
+.list1Item,
+.list2Item {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 175, 239);
+}
+
+form {
+    background-color: rgb(0, 175, 239);
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    margin-top: 50px;
 }
