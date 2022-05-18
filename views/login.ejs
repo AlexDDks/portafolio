@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/styleHeader.css">
+    <link rel="stylesheet" href="/stylesheets/styleLogin.css">
     <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
@@ -42,10 +42,36 @@
         </section>
     </header>
 
-    <form action="/users/login" method="POST">
 
-    </form>
+    <section class="sectionForm">
+        <article class="formLeft">
+            <form action="/users/login" method="POST" class="formLogin">
 
+                <h2>Bienvenido</h2>
+
+                <div class="user">
+                    <input class="barra" type="text" name="nombreDeUsurio" placeholder="Usuario">
+                </div>
+
+                <div class="password">
+                    <input class="barra" type="password" name="contrasena" placeholder="Contraseña">
+                </div>
+
+
+                <a class="reestablecerContrasena" href="/reestabletucontrasena">¿Olvidaste tu contraseña?</a>
+
+                <a class="signup" href="/signup">Regístrate</a>
+
+                <button class="boton" type="submit"><a href="/">Ingresar</a></button>
+            </form>
+        </article>
+
+        <article class="formRight">
+            <div class="nextForm">
+                <img class="imgForm" src="/img/programmer.png" alt="">
+            </div>
+        </article>
+    </section>
 
 </body>
 

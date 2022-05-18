@@ -72,10 +72,70 @@ a {
     color: rgb(0, 175, 239);
 }
 
-form {
-    background-color: rgb(0, 175, 239);
-    width: 400px;
-    height: 200px;
+.sectionForm {
+    display: flex;
+    margin-top: 1%;
+}
+
+.formLeft {
+    width: 100%;
+    height: 45vh;
+    padding-left: 15%;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+.formRight {
+    width: 100%;
+    height: 45vh;
+    padding-right: 15%;
+}
+
+h2 {
+    padding: 0px;
+    padding-top: 7%;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+
+}
+
+body section form {
+
+    height: 100%;
+    background-color: rgb(20, 66, 121);
+    background: linear-gradient(180deg, rgba(20, 66, 121, 1) 0%, rgba(0, 175, 239, 1) 100%);
+    border-radius: 7.5%;
+    box-shadow: -10px 10px 10px 5px rgb(13, 41, 75);
+    border: 2px red solid;
+
+}
+
+.nextForm {
+    height: 100%;
+}
+
+.imgForm {
+    display: block;
+    height: 50%;
     margin: auto;
-    margin-top: 50px;
+}
+
+.user {
+
+    text-align: center;
+    padding-top: 3%;
+}
+
+.barra {
+    border-radius: 5%;
+    width: 45%;
+}
+
+.password {
+    border-radius: 5%;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
