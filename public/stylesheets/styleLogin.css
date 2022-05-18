@@ -75,6 +75,7 @@ a {
 .sectionForm {
     display: flex;
     margin-top: 1%;
+    justify-content: space-evenly;
 }
 
 .formLeft {
@@ -90,11 +91,12 @@ a {
     width: 100%;
     height: 45vh;
     padding-right: 15%;
+
 }
 
 h2 {
     padding: 0px;
-    padding-top: 7%;
+    padding-top: 3%;
     text-align: center;
     font-weight: 500;
     color: white;
@@ -108,8 +110,7 @@ body section form {
     background: linear-gradient(180deg, rgba(20, 66, 121, 1) 0%, rgba(0, 175, 239, 1) 100%);
     border-radius: 7.5%;
     box-shadow: -10px 10px 10px 5px rgb(13, 41, 75);
-    border: 2px red solid;
-
+    border: 1px black solid;
 }
 
 .nextForm {
@@ -118,24 +119,65 @@ body section form {
 
 .imgForm {
     display: block;
-    height: 50%;
+    height: 100%;
     margin: auto;
 }
 
 .user {
 
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2%;
 }
 
 .barra {
-    border-radius: 5%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 6px 0px 6px 0px;
+    text-align: center;
     width: 45%;
+    border: 0;
 }
 
 .password {
     border-radius: 5%;
     text-align: center;
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.reestablecerContrasena {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.signup {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.divBoton {
+    display: flex;
+}
+
+.boton {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 3%;
+    border: 0;
+    padding: 6px;
+}
+
+.textBoton {
+    color: black;
 }
