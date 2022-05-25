@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
     <link rel="stylesheet" href="/stylesheets/styleLogin.css">
     <script src="https://kit.fontawesome.com/fa36d49c1a.js" crossorigin="anonymous"></script>
     <title>Login</title>
@@ -15,7 +16,7 @@
         <section class="sectionHeader">
             <article class="articleHeader">
                 <div class="divLogo">
-                    <img class="logo" src="/img/logo3.png" alt="">
+                    <a class="aLogo" href="/"><img class="logo" src="/img/logo3.png" alt=""></a>
                 </div>
                 <h1>Diseño, Tecnología y Arquitectura de méxico</h1>
             </article>
@@ -46,26 +47,26 @@
     <section class="sectionForm">
         <article class="formLeft">
             <form action="/users/login" method="POST" class="formLogin">
+                <div class="formContent">
+                    <h2>Bienvenido</h2>
 
-                <h2>Bienvenido</h2>
+                    <div class="user">
+                        <input class="barra" type="text" name="nombreDeUsurio" placeholder="Usuario">
+                    </div>
 
-                <div class="user">
-                    <input class="barra" type="text" name="nombreDeUsurio" placeholder="Usuario">
+                    <div class="password">
+                        <input class="barra" type="password" name="contrasena" placeholder="Contraseña">
+                    </div>
+
+                    <div class="links">
+                        <a class="reestablecerContrasena" href="/reestabletucontrasena">¿Olvidaste tu contraseña?</a>
+                        <a class="signup" href="/signup">Regístrate</a>
+                    </div>
+
+                    <div class="divBoton">
+                        <button class="boton" type="submit"><a class="textBoton" href="/">Ingresar</a></button>
+                    </div>
                 </div>
-
-                <div class="password">
-                    <input class="barra" type="password" name="contrasena" placeholder="Contraseña">
-                </div>
-
-                <div class="links">
-                    <a class="reestablecerContrasena" href="/reestabletucontrasena">¿Olvidaste tu contraseña?</a>
-                    <a class="signup" href="/signup">Regístrate</a>
-                </div>
-
-                <div class="divBoton">
-                    <button class="boton" type="submit"><a class="textBoton" href="/">Ingresar</a></button>
-                </div>
-
             </form>
 
         </article>

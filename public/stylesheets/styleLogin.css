@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-    padding-top: 4%;
+    margin-top: 4%;
 }
 
 h1 {
@@ -53,7 +53,6 @@ li {
     /* Acá vemos la importancia de utilizar alguna magnitud relativa no
         dependiente del padre, porque el padre de los 2 gurpos de li son diferentes
         entonces si usamos porcentajes para poner un padding, ambos paddings serán diferentes */
-
 }
 
 .list1Header,
@@ -73,17 +72,32 @@ li {
 a {
     text-decoration: none;
     color: rgb(0, 175, 239);
+    padding: 2px;
+}
+
+header .articleNav a {
+    display: flex;
+    align-items: center;
+    transition: all 450ms;
+}
+
+header .articleNav a:hover {
+    background-color: rgba(149, 145, 145, 0.4);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 .sectionForm {
     display: flex;
     margin-top: 1%;
     justify-content: space-evenly;
+    position: relative;
 }
+
 
 .formLeft {
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     padding-left: 15%;
     padding-top: 0px;
     margin-top: 0px;
@@ -102,18 +116,24 @@ h2 {
     padding-top: 3%;
     text-align: center;
     font-weight: 500;
-    color: white;
+    color: black;
 
 }
 
 body section form {
-
     height: 100%;
-    background-color: rgb(20, 66, 121);
-    background: linear-gradient(180deg, rgba(20, 66, 121, 1) 0%, rgba(0, 175, 239, 1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 175, 239, 0.5) 94%);
     border-radius: 7.5%;
     box-shadow: -10px 10px 10px 5px rgb(13, 41, 75);
     border: 1px black solid;
+    position: relative;
+    bottom: 5%;
+}
+
+.formContent {
+    position: relative;
+    bottom: 4%;
 }
 
 .nextForm {
@@ -152,20 +172,32 @@ body section form {
 
 .links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.reestablecerContrasena {
-    color: white;
+.links a,
+.boton {
+    margin: .5%;
+    transition: all 350ms;
+}
+
+.links a:hover {
+    font-weight: bold;
+    margin: 1%;
+}
+
+.boton:hover {
+    font-weight: bold;
+}
+
+.reestablecerContrasena,
+.signup {
+    color: black;
     text-align: center;
     width: 100%;
 }
 
-.signup {
-    color: white;
-    text-align: center;
-    width: 100%;
-}
 
 .divBoton {
     display: flex;
@@ -177,10 +209,14 @@ body section form {
     font-size: 16px;
     margin: auto;
     margin-top: 3%;
-    border: 0;
+    border: 2px black solid;
     padding: 6px;
 }
 
 .textBoton {
     color: black;
+}
+
+.signup {
+    position: relative;
 }
