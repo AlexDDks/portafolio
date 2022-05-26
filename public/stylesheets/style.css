@@ -27,11 +27,9 @@ header {
     align-items: center;
     /* En el cross axis en la magnitud total, los ítems van a colocarse al medio*/
     background-color: rgb(255, 255, 255);
+    position: relative;
 
 }
-
-
-
 
 .logo {
     display: block;
@@ -39,6 +37,8 @@ header {
     /* El logo toma el valor en porcentaje de su contenedor DIV, el caul comparte magnitud con 3 elementos más */
     padding: 1vw;
     margin-left: 5%;
+    position: relative;
+    left: 10%;
 }
 
 
@@ -63,7 +63,6 @@ a {
     font-size: 13px;
 }
 
-
 .list1Header {
     display: flex;
     /* Debido a que todos los items dentro del contenedor list1 son listas
@@ -71,6 +70,8 @@ a {
     padre, estos se alinean entorno al main axis */
     align-items: center;
     /* Se centran los items en su contenedor li */
+    position: relative;
+    right: 7.5%;
 }
 
 li {
@@ -99,6 +100,8 @@ li:hover {
 
 .list2Header {
     align-items: center;
+    position: relative;
+    right: 22.5%;
 }
 
 .img1 {
