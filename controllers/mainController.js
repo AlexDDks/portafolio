@@ -13,6 +13,14 @@ const controller = {
 
     quienesSomos: (req, res) => {
         res.render('quienesSomos')
+    },
+
+    footerNav: (req, res) => {
+        res.render('footerNav')
+    },
+
+    redesSociales: (req, res) => {
+        res.render('redesSociales')
     }
 }
 
