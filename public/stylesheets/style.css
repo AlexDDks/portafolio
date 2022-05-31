@@ -13,8 +13,19 @@ body {
     /* Le damos al body el ancho total del vw hasta un máximo valor absoluto */
     background-color: white;
     font-family: 'Segoe UI';
+
 }
 
+Main {
+    padding-top: 140px;
+    /* Hicimos este div especialmente para posicionar la linea debajo del header que está fixed */
+}
+
+.divHeader {
+    width: 100%;
+    position: fixed;
+    /* Se hizo un div para el header y la línea, para que estos dos estuvieran fijados en el top */
+}
 
 header {
     width: 100%;
@@ -27,8 +38,9 @@ header {
     align-items: center;
     /* En el cross axis en la magnitud total, los ítems van a colocarse al medio*/
     background-color: rgb(255, 255, 255);
-    position: relative;
-
+    /* position: relative; */
+    /* position: fixed; */
+    height: 140px;
 }
 
 .logo {
@@ -46,7 +58,7 @@ header {
     width: 95%;
     margin: auto;
     color: rgb(93, 93, 93);
-    height: .1px;
+    height: 1px;
     background-color: rgb(93, 93, 93);
 }
 
