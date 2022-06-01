@@ -13,6 +13,8 @@ body {
     /* Le damos al body el ancho total del vw hasta un máximo valor absoluto */
     background-color: white;
     font-family: 'Segoe UI';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 175, 239, 0.5) 94%);
 
 }
 
@@ -72,7 +74,7 @@ a {
     color: rgb(26, 207, 223);
     font-weight: 550;
     /* Le quitamos el color a los enlaces */
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .list1Header {
@@ -174,8 +176,10 @@ footer section ul a {
 footer li {
     margin: .5vw;
     padding: .25vw;
-    border: rgb(26, 207, 223) 2px solid;
-    /* background-color: rgba(93, 93, 93, .8); */
-    text-decoration: underline;
+    border: rgb(255, 255, 255) 2px solid;
     border-radius: 5px;
+}
+
+footer a {
+    color: rgb(0, 0, 0)
 }

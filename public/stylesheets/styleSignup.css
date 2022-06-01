@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 175, 239, 0.5) 94%);
+    height: 100vh;
+}
+
+.articleHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 4%;
+}
+
+h1 {
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(0, 175, 239);
+    padding-top: .5%;
+
+}
+
+hr {
+    width: 95%;
+    margin-top: 20px;
+    color: rgb(93, 93, 93);
+    height: 1px;
+    background-color: rgb(93, 93, 93);
+}
+
+.articleNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerNavBar {
+    align-items: flex-start;
+}
+
+li {
+    list-style: none;
+    padding: none;
+    /* Acá vemos la importancia de utilizar alguna magnitud relativa no
+        dependiente del padre, porque el padre de los 2 gurpos de li son diferentes
+        entonces si usamos porcentajes para poner un padding, ambos paddings serán diferentes */
+}
+
+.list1Header,
+.list2Header {
+    font-size: 1rem;
+    display: flex;
+    padding-left: 0px;
+    /* No sé porqué me aparece acá un padding a la izquierda que no quiero */
+}
+
+.list1Item,
+.list2Item {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 175, 239);
+    padding: 2px;
+}
+
+header .articleNav a {
+    display: flex;
+    align-items: center;
+    transition: all 450ms;
+}
+
+header .articleNav a:hover {
+    background-color: rgba(149, 145, 145, 0.4);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+.sectionForm {
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+
+.formLeft {
+    height: 50vh;
+    padding-left: 15%;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+.formRight {
+    width: 100%;
+    height: 45vh;
+    padding-right: 15%;
+
+}
+
+h2 {
+    padding: 0px;
+    padding-top: 3%;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+
+}
+
+body section form {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 25%, rgba(0, 175, 239, 0.5) 94%);
+    border-radius: 7.5%;
+    box-shadow: -10px 10px 10px 5px rgb(13, 41, 75);
+    border: 4px black solid;
+    position: relative;
+    bottom: 5%;
+}
+
+.formContent {
+    position: relative;
+    bottom: 4%;
+}
+
+.nextForm {
+    height: 100%;
+}
+
+.imgForm {
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+
+.user {
+
+    text-align: center;
+    padding-top: 2%;
+}
+
+.barra {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 6px 0px 6px 0px;
+    text-align: center;
+    width: 45%;
+    border: 0;
+}
+
+.password {
+    border-radius: 5%;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links a,
+.boton {
+    margin: .5%;
+    transition: all 350ms;
+}
+
+.links a:hover {
+    font-weight: bold;
+    margin: 1%;
+}
+
+.boton:hover {
+    font-weight: bold;
+}
+
+.reestablecerContrasena,
+.signup {
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+
+.divBoton {
+    display: flex;
+}
+
+.boton {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 3%;
+    border: 2px black solid;
+    padding: 6px;
+}
+
+.textBoton {
+    color: black;
+}
+
+.signup {
+    position: relative;
+}

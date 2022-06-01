@@ -5,7 +5,12 @@ const controller = {
 
     pruebas: (req, res) => {
         res.render('pruebas')
+    },
+
+    signup: (req, res) => {
+        res.render('signup')
     }
+
 }
 
 
